@@ -8,8 +8,8 @@ else
 fi
 
 opt_set SERIAL_PORT 1
-opt_set SERIAL_PORT_2 -1
-opt_set SERIAL_PORT_3 6
+opt_set SERIAL_PORT_2 6
+opt_set SERIAL_PORT_3 -1
 
 opt_set SDCARD_CONNECTION ONBOARD
 
