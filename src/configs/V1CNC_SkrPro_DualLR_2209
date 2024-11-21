@@ -31,5 +31,19 @@ opt_set Z2_CURRENT 900
 opt_disable \
     E0_DRIVER_TYPE
 
+# Custom settings
+
+# Name
+opt_set CUSTOM_MACHINE_NAME "\"LowRider3 WiFi\""
+# Control by RPM
+opt_set CUTTER_POWER_UNIT RPM
+# RPM min and max for my spindle
+opt_set SPEED_POWER_MIN 5000
+opt_set SPEED_POWER_MAX 20000
+# Enable WiFi serial
+opt_set SERIAL_PORT_2 6
+opt_set SERIAL_PORT_3 -1
+
+echo "- Configured for custom setup" >> README.md
 
 export PLATFORMIO_ENV=BIGTREE_SKR_PRO
