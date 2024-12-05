@@ -44,6 +44,13 @@ opt_set SPEED_POWER_MAX 20000
 opt_set SERIAL_PORT_2 6
 opt_set SERIAL_PORT_3 -1
 
+# Important settings from official pre-configured firmware
+
+opt_set Z_MIN_ENDSTOP_INVERTING true
+opt_set Z_MIN_PROBE_ENDSTOP_INVERTING true
+opt_set DEFAULT_STEPPER_DEACTIVE_TIME 1200
+opt_set DISABLE_INACTIVE_Z false
+
 echo "- Configured for custom setup" >> README.md
 
 export PLATFORMIO_ENV=BIGTREE_SKR_PRO
